@@ -20,10 +20,11 @@ Update the "SkySix app" section of `privacy.html` to say what the app actually c
 ## Going live on Cloudflare (free)
 
 ### 1. Add the site to Cloudflare Pages
-1. Sign in at https://dash.cloudflare.com and open **Workers & Pages**.
-2. Choose **Create** > **Pages** > **Connect to Git**, authorise GitHub, and pick `ejbvmi/X_Works_Aero`.
-3. Production branch: `main`. Framework preset: **None**. Build command: leave empty. Build output directory: `/`.
-4. Click **Save and Deploy**. You get a working `*.pages.dev` address within a minute.
+1. Sign in at https://dash.cloudflare.com and open **Compute** > **Workers & Pages**.
+2. Click **Create application**. On the next screen, open the **Pages** tab (or click the small **Get started** link next to "Looking to deploy Pages?" at the bottom). Do not use the Workers option.
+3. Choose **Import an existing Git repository**, authorise GitHub if asked, and pick `ejbvmi/X_Works_Aero`.
+4. Production branch: `main`. Framework preset: **None**. Build command: leave empty. Build output directory: leave empty, or `/` (the pages sit at the top of the repository).
+5. Click **Save and Deploy**. You get a working `*.pages.dev` address within a minute.
 
 ### 2. Move the domain's DNS to Cloudflare
 1. In the Cloudflare dashboard, choose **Add a domain**, enter `xworksaero.com`, and pick the **Free** plan.
